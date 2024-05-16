@@ -1,18 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private float health 10.0f;
+    [SerializeField] float death 10.0f;
+    [SerializeField] float life 10.0f;
+    [SerializeField] float gold 10.0f;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+    Debug.log(health, death, life, gold);
 }
