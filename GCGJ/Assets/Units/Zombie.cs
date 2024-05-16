@@ -16,6 +16,18 @@ public class Zombie
     {
         return numberOfUnit + increaseUnit;
     }
+
+    int returnCorpseCost(){
+        return corpseCost
+    }
+
+    int returnManaCost(){
+        return manaCost
+    }
+
+    double returnResoucesPerSecond(){
+        return resourcesPerSecond
+    }
     
 
 }
