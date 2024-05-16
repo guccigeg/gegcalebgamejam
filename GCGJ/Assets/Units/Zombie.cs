@@ -14,7 +14,7 @@ public class Zombie
     
     int increaseNumberOfUnit()
     {
-        return numberOfUnit + increaseUnit
+        return numberOfUnit + increaseUnit;
     }
     
 
