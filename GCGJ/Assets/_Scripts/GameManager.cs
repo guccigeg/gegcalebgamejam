@@ -2,22 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 public class GameManager : MonoBehaviour {
-    [SerializeField] private float health = 10.0f;
-    [SerializeField] private float death = 10.0f;
+    [SerializeField] private float mana = 10.0f;
+    [SerializeField] private float corpses = 10.0f;
     private void Update() {
 
     }
-    public void LoseHealth(float lostHealth) {
-        health -= lostHealth;
+    public void LoseMana(float lostMana) {
+        mana -= lostMana;
     }
-    public void GainHealth(float gainedHealth) {
-        health += gainedHealth;
+    public void GainMana(float gainedMana) {
+        mana += gainedMana;
     }
 
-    public void LoseDeath(float lostDeath) {
-        death -= lostDeath;
+    public void LoseCorpses(float lostCorpses) {
+        corpses -= lostCorpses;
     }
-    public void GainDeath(float gainedDeath) {
-        death += gainedDeath;
+    public void GainDeath(float gainedCorpses) {
+        corpses += gainedCorpses;
     }
 }
