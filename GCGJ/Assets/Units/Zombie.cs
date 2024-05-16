@@ -12,7 +12,7 @@ public class Zombie
     int manaCost = 10;
 
     
-    increaseNumberOfUnit()
+    int increaseNumberOfUnit()
     {
         return numberOfUnit + increaseUnit
     }
