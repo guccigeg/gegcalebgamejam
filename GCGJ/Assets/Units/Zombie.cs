@@ -18,15 +18,15 @@ public class Zombie
     }
 
     int returnCorpseCost(){
-        return corpseCost
+        return corpseCost;
     }
 
     int returnManaCost(){
-        return manaCost
+        return manaCost;
     }
 
     double returnResoucesPerSecond(){
-        return resourcesPerSecond
+        return resourcesPerSecond;
     }
     
 
