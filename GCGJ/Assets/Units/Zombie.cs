@@ -19,18 +19,6 @@ public class Zombie : MonoBehaviour
         numberOfUnit += increaseUnit;
     }
 
-    public int returnCorpseCost(){
-        return corpseCost;
-    }
-
-    public int returnManaCost(){
-        return manaCost;
-    }
-
-    public double returnResoucesPerSecond(){
-        return resourcesPerSecond;
-    }
-    
 
 }
 
