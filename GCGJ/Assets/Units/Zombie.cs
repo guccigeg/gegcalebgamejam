@@ -1,33 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Zombie
+
+public class Zombie : MonoBehaviour
 {
-    int numberOfUnit = 0;
+    public int numberOfUnit;
 
-    int increaseUnit = 1;
-    double resourcesPerSecond = .2;
-    int corpseCost = 1;
-    int manaCost = 10;
+    public int increaseUnit;
+    public double resourcesPerSecond;
+    public int corpseCost;
+    public int manaCost;
 
     
-    int increaseNumberOfUnit()
+    public void increaseNumberOfUnit()
     {
-        return numberOfUnit + increaseUnit;
+        numberOfUnit += increaseUnit;
     }
 
-    int returnCorpseCost(){
+    public int returnCorpseCost(){
         return corpseCost;
     }
 
-    int returnManaCost(){
+    public int returnManaCost(){
         return manaCost;
     }
 
-    double returnResoucesPerSecond(){
+    public double returnResoucesPerSecond(){
         return resourcesPerSecond;
     }
     
 
 }
+

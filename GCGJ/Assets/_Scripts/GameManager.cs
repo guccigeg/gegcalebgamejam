@@ -1,23 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.UI;
+using TMPro;
 public class GameManager : MonoBehaviour {
-    [SerializeField] private float mana = 10.0f;
-    [SerializeField] private float corpses = 10.0f;
-    private void Update() {
 
-    }
-    public void LoseMana(float lostMana) {
-        mana -= lostMana;
-    }
-    public void GainMana(float gainedMana) {
-        mana += gainedMana;
+    public int corpses;
+    public TextMeshProUGUI corpseText;
+    public static GameManager instance;
+    void Awake(){
+        instance = this;
     }
 
-    public void LoseCorpses(float lostCorpses) {
-        corpses -= lostCorpses;
+    public void AddCorpse(int amount){
+        corpses += amount;
+        corpseText.text = "SkullEmoji: " + corpses.ToString();
     }
-    public void GainDeath(float gainedCorpses) {
-        corpses += gainedCorpses;
+    
+    public void UseCorpse(int amount){
+        corpses -= amount;
     }
 }
